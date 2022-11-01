@@ -11,6 +11,7 @@ import {
 import {
   deleteProductQuery, getProductQuery, updateProductQuery, addProductQuery,
 } from './products';
+import getAllNotificationsQuery from './notifications';
 
 export {
   getDonationsQuery,
@@ -31,4 +32,5 @@ export {
   addRequestQuery,
   getProductDetailsQuery,
   checkSelectedProductQuery,
+  getAllNotificationsQuery,
 };
