@@ -48,8 +48,8 @@ const UserRequestCard
   return (
     <Box className="request-card">
       <Image attributes={{
-        src: request['productId.gallery'][0],
-        alt: `an image of ${request['productId.title']}`,
+        src: request['product.gallery'][0],
+        alt: `an image of ${request['product.title']}`,
         className: 'request-img',
       }}
       />
@@ -58,13 +58,13 @@ const UserRequestCard
           className="request-title"
           id="title"
         >
-          {requestObj['productId.title']}
+          {requestObj['product.title']}
         </h3>
         <p
           className="request-description"
           id="description"
         >
-          {requestObj['productId.title']}
+          {requestObj['product.title']}
         </p>
         <Link to={`/product/${requestObj.product_id}/details`}>View details</Link>
         <Typography

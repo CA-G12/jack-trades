@@ -27,7 +27,6 @@ const UserRequest: FC = () => {
         .get(`/api/v1/requests?offset=${offset}`);
       if (data.count === 0) {
         setMessage('no requests yet');
-        console.log(data);
         setIsLoading(false);
       } else {
         setRequests(data.rows);
