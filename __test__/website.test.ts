@@ -1,6 +1,6 @@
 import request from "supertest";
 
-import {app} from "../server/app";
+import { app } from "../server/app";
 import sequelize from "../server/database/connection";
 import buildTables from "../server/database/build";
 
@@ -15,9 +15,9 @@ describe("Statistics routes test!", () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect({
-        donateTimes: 6,
+        donateTimes: 19,
         exchangeTimes: 0,
-        contributeTimes: 12,
+        contributeTimes: 25,
       });
   });
 });
