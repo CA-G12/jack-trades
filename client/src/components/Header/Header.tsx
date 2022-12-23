@@ -43,7 +43,7 @@ const Header = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           amet consectetur adipisicing elit.
         </Typography>
-        <Link to="/products" style={{ textDecoration: 'none' }}>
+        <Link to="/products/all" style={{ textDecoration: 'none' }}>
           <Button
             style={{
               text: 'See more',
