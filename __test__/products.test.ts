@@ -13,12 +13,13 @@ describe('Check for filters /products/filter', () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.totalPages).toBe(5)
+        expect(res.body.totalPages).toBe(2)
         expect(res.body.products[0]).toEqual({
-          id: 2,
-          title: "something",
+          id: 1,
+          title: "nice sofa",
           gallery: [
-            "https://apollo-singapore.akamaized.net/v1/files/hccwzehg6d8u-IN/image;s=1080x1080 ",
+            "https://apollo-singapore.akamaized.net/v1/files/sh0il57qfjfh3-IN/image;s=780x0;q=60 ",
+            "https://apollo-singapore.akamaized.net/v1/files/zjt3gsd2oobm2-IN/image;s=780x0;q=60",
           ]
         })
       })
@@ -29,13 +30,13 @@ describe('Check for filters /products/filter', () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.totalPages).toBe(5)
+        expect(res.body.totalPages).toBe(2)
         expect(res.body.products[0]).toEqual({
-          id: 8,
-          title: "Louis Vuitton Jacques Durand Sunglasses Black Sunglasses",
+          id: 7,
+          title: "Jacques Durand",
           gallery: [
-            "https://cdn.rebelle.com//cd/cdac49d320221014-9-j8pnpt.JPG?width=514&height=510",
-            "https://cdn.rebelle.com//86/8651792_daa1c738578a502c5b235a1171193928.JPG?width=514&height=510"
+            "https://cdn.rebelle.com//86/8649492_abd39855c1ac015cf78666200ee770f1.jpeg?width=514&height=510",
+            "https://cdn.rebelle.com//86/8649492_7dbf8f148e0aa18b72c6f77298512ef8.jpeg?width=514&height=510",
           ]
         })
       })
@@ -46,7 +47,7 @@ describe('Check for filters /products/filter', () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.totalPages).toBe(2)
+        expect(res.body.totalPages).toBe(1)
         expect(res.body.products[0]).toEqual({
           id: 1, title: 'nice sofa', gallery: [
             'https://apollo-singapore.akamaized.net/v1/files/sh0il57qfjfh3-IN/image;s=780x0;q=60 ',
@@ -61,28 +62,30 @@ describe('Check for filters /products/filter', () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.totalPages).toBe(5)
+        expect(res.body.totalPages).toBe(2)
         expect(res.body.products[0]).toEqual({
-          id: 2,
-          title: 'something',
+          id: 1,
+          title: "nice sofa",
           gallery: [
-            "https://apollo-singapore.akamaized.net/v1/files/hccwzehg6d8u-IN/image;s=1080x1080 ",
+            "https://apollo-singapore.akamaized.net/v1/files/sh0il57qfjfh3-IN/image;s=780x0;q=60 ",
+            "https://apollo-singapore.akamaized.net/v1/files/zjt3gsd2oobm2-IN/image;s=780x0;q=60",
           ]
         })
       })
   })
-  it('test the endpoint without any filter attached with newest 2', async () => {
+  it('test the endpoint without any filter attached with type=donation', async () => {
     await request(app)
       .get('/api/v1/products/filter?type=donation')
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.totalPages).toBe(4)
+        expect(res.body.totalPages).toBe(1)
         expect(res.body.products[0]).toEqual({
-          id: 2,
-          title: 'something',
+          id: 1,
+          title: "nice sofa",
           gallery: [
-            "https://apollo-singapore.akamaized.net/v1/files/hccwzehg6d8u-IN/image;s=1080x1080 ",
+            "https://apollo-singapore.akamaized.net/v1/files/sh0il57qfjfh3-IN/image;s=780x0;q=60 ",
+            "https://apollo-singapore.akamaized.net/v1/files/zjt3gsd2oobm2-IN/image;s=780x0;q=60",
           ]
         })
       })
