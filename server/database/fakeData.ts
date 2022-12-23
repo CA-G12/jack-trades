@@ -2,7 +2,12 @@ import {
   Product, User, Category, Favorite,
 } from '../interfaces/fakeDataTypes';
 
-const data: { products: Product[], users: User[], categories: Category[], favorites: Favorite[] } = {
+const data: {
+  products: Product[],
+  users: User[],
+  categories: Category[],
+  favorites: Favorite[]
+} = {
   products: [
     {
       title: 'nice sofa',
@@ -134,156 +139,6 @@ const data: { products: Product[], users: User[], categories: Category[], favori
       user_id: 2,
       category_id: 3,
     },
-    {
-      title: 'Jacket',
-      description: 'A jacket for sale on a coat hanger',
-      gallery: [
-        'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80 ',
-        'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 1,
-      category_id: 1,
-    },
-    {
-      title: 'Jeans',
-      description: 'collection of jeans',
-      gallery: [
-        'https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
-        'https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 3,
-      category_id: 1,
-    },
-    {
-      title: 'Shirts',
-      description: 'Shirts and Jacket hanging on rail.',
-      gallery: [
-        'https://images.unsplash.com/photo-1561365452-adb940139ffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=856&q=80',
-        'https://images.unsplash.com/photo-1561365452-adb940139ffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=856&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 4,
-      category_id: 1,
-    },
-    {
-      title: 'Shirts',
-      description: 'Shirts fit for winnter and cold weather',
-      gallery: [
-        'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=405&q=80',
-        'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=405&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 6,
-      category_id: 1,
-    },
-    {
-      title: 'Wardrobe',
-      description: 'Jacket, T-shirt, jeans.',
-      gallery: [
-        'https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
-        'https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 7,
-      category_id: 1,
-    },
-    {
-      title: 'Jacket',
-      description: 'Jacket.',
-      gallery: [
-        'https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        'https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 7,
-      category_id: 1,
-    },
-    {
-      title: 'collection',
-      description: 'Shirt, jeans and Shoes.',
-      gallery: [
-        'https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        'https://images.unsplash.com/photo-1467043237213-65f2da53396f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 4,
-      category_id: 1,
-    },
-    {
-      title: 'desktop',
-      description: 'table can use for saving your stuff.',
-      gallery: [
-        'https://images.unsplash.com/photo-1647481082125-1df6bfa3214d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 2,
-      category_id: 2,
-    },
-    {
-      title: 'fan',
-      description: 'fan.',
-      gallery: [
-        'https://images.unsplash.com/photo-1565151443833-29bf2ba5dd8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 5,
-      category_id: 2,
-    },
-    {
-      title: 'chair',
-      description: 'chair.',
-      gallery: [
-        'https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 2,
-      category_id: 2,
-    },
-    {
-      title: 'light',
-      description: 'light.',
-      gallery: [
-        'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 4,
-      category_id: 2,
-    },
-    {
-      title: 'kanap',
-      description: 'kanap.',
-      gallery: [
-        'https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 3,
-      category_id: 2,
-    },
-    {
-      title: 'chair',
-      description: 'chair.',
-      gallery: [
-        'https://images.unsplash.com/photo-1611464908623-07f19927264e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
-      ],
-      is_available: true,
-      type: 'donation',
-      user_id: 3,
-      category_id: 2,
-    },
   ],
   users: [
     {
@@ -363,6 +218,10 @@ const data: { products: Product[], users: User[], categories: Category[], favori
     {
       name: 'Electronics',
       image: 'https://www.easy2digital.com/wp-content/uploads/2021/08/design-278978978989-Max-Quality-1024x576.jpg',
+    },
+    {
+      name: 'Kids',
+      image: 'https://st2.depositphotos.com/1000260/8939/i/950/depositphotos_89394704-stock-photo-children-painting-at-art-school.jpg',
     },
     {
       name: 'others',

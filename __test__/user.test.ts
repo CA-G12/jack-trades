@@ -59,7 +59,7 @@ describe("user route tests", () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.count).toBe(2);
+        expect(res.body.count).toBe(1);
         expect(res.body.rows[0].id).toBe(8);
         expect(res.body.rows[0].title).toBe(
           "Louis Vuitton Jacques Durand Sunglasses Black Sunglasses"
@@ -73,7 +73,7 @@ describe("user route tests", () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect((res) => {
-        expect(res.body.count).toBe(7);
+        expect(res.body.count).toBe(5);
         expect(res.body.rows[0].id).toBe(1);
       });
   });

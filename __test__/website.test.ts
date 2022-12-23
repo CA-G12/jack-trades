@@ -15,9 +15,9 @@ describe("Statistics routes test!", () => {
       .expect(200)
       .expect("Content-Type", /json/)
       .expect({
-        donateTimes: 19,
+        donateTimes: 6,
         exchangeTimes: 0,
-        contributeTimes: 25,
+        contributeTimes: 12
       });
   });
 });
